@@ -9,7 +9,7 @@ from langchain.chains import RetrievalQA
 from langchain.llms import OpenAI  # Или GigaChat (если через API)
 
 import numpy as np
-
+import os
 
 
 
