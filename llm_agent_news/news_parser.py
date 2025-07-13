@@ -51,7 +51,8 @@ retriever = vector_db.as_retriever()
 retriever.get_relevant_documents("Какие компании под риском?")
 llm = OpenAI(
     temperature=0.3,
-    openai_api_key="REMOVEDxzEYXNf-2lfF37CLv3ENT1IMfGpIRzWnwfIHrgw1eFHi_iQTgJsdXMO8ObCzdkenkLg5A1E5gPT3BlbkFJaRkLmFKYadOq2_J6JnuMXr6IMtstVXhi3q81iRlAaW7FS53RGt8f49-ZFUzIRqv50hRJ3ZZhAA"  # ← сюда вставь свой ключ
+    openai_api_key= os.getenv("openai_token")
+
 )
 
 
